@@ -1,2 +1,0 @@
-class ContactedsController < ApplicationController
-end
