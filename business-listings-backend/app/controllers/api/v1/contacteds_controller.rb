@@ -1,5 +1,6 @@
 class Api::V1::ContactedsController < ApplicationController
-    # before_action :set_contacted
+    #  before_action :set_contacted
+      before_action :set_business
 
     def index
         contacteds = @business.contacteds
@@ -38,6 +39,7 @@ class Api::V1::ContactedsController < ApplicationController
       def set_business
         @business = Business.find(params[:business_id])
       end
+      
     
       def contacted_params
         params.require(:contacted).permit(:business_id, :name, :number, :email, :date, :message)
