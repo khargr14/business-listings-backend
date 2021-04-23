@@ -365,3 +365,30 @@ Completed 500 Internal Server Error in 1ms (Allocations: 492)
 NoMethodError (undefined method `contacteds' for nil:NilClass):
   
 app/controllers/api/v1/contacteds_controller.rb:5:in `index'
+Started GET "/api/v1/contacteds" for 127.0.0.1 at 2021-04-22 22:40:27 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::ContactedsController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2647)
+
+
+  
+NoMethodError (undefined method `contacteds' for nil:NilClass):
+  
+app/controllers/api/v1/contacteds_controller.rb:5:in `index'
+Started GET "/api/v1/contacteds" for 127.0.0.1 at 2021-04-22 22:40:49 -0400
+Processing by Api::V1::ContactedsController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 507)
+
+
+  
+NoMethodError (undefined method `contacteds' for nil:NilClass):
+  
+app/controllers/api/v1/contacteds_controller.rb:5:in `index'
+Started GET "/api/v1/businesses" for 127.0.0.1 at 2021-04-22 22:40:56 -0400
+Processing by Api::V1::BusinessesController#index as HTML
+  [1m[36mBusiness Load (0.2ms)[0m  [1m[34mSELECT "businesses".* FROM "businesses"[0m
+  ↳ app/controllers/api/v1/businesses_controller.rb:6:in `index'
+Completed 200 OK in 17ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 2650)
+
+
