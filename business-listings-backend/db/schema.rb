@@ -30,8 +30,6 @@ ActiveRecord::Schema.define(version: 2021_04_23_012800) do
     t.string "message"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["business_id"], name: "index_contacteds_on_business_id"
   end
 
-  add_foreign_key "contacteds", "businesses"
 end

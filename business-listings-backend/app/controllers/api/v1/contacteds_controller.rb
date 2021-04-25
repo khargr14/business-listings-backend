@@ -1,6 +1,6 @@
 class Api::V1::ContactedsController < ApplicationController
     #  before_action :set_contacted
-      before_action :set_business
+      before_action :set_business#, only: [:show, :update, :edit, :]
 
     def index
         contacteds = @business.contacteds

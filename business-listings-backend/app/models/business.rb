@@ -1,4 +1,4 @@
 class Business < ApplicationRecord
-    has_many :contacted
+    has_many :contacteds
  
 end
