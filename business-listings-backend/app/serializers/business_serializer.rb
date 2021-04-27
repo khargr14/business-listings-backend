@@ -1,4 +1,6 @@
-class BusinessSerializer
-  include FastJsonapi::ObjectSerializer
-  attributes :name, :number, :email, :industry
+class BusinessSerializer < ActiveModel::Serializer
+  # include FastJsonapi::ObjectSerializer
+  attributes :id, :name, :number, :email, :industry
+
+  has_many :contacteds
 end

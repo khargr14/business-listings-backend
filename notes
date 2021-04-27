@@ -1,0 +1,3 @@
+business has many contacteds
+
+each contacted belongs to a business
