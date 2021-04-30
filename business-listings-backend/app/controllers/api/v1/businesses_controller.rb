@@ -7,6 +7,7 @@ class Api::V1::BusinessesController < ApplicationController
       end
     
       def create
+        
         business = Business.new(business_params)
         if business.save
           render json: business
