@@ -10,9 +10,11 @@ class Api::V1::ContactedsController < ApplicationController
     
       def create
         contacted = @business.contacteds.new(contacted_params)
+        puts contacted.inspect
         if contacted.save
           render json: @business
         else
+          puts contacted.errors.inspect
           render json: {error: 'Error creating contacted'}
         end
       end

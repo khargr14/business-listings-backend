@@ -30,7 +30,7 @@ class Api::V1::BusinessesController < ApplicationController
       def destroy
         business = Business.find(params[:id])
         business.destroy
-        # render json: business.all
+        render json: {status: :ok}
       end
     
       private
